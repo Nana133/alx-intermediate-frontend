@@ -1,0 +1,14 @@
+// Define the margin mixin
+@mixin side-margins($value) {
+  margin-left: $value;
+  margin-right: $value;
+}
+
+// Apply the mixin to body and div
+body {
+  @include side-margins(10px);
+}
+
+div {
+  @include side-margins(15px);
+}
